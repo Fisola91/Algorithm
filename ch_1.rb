@@ -36,9 +36,9 @@ def binary_search(lists, item)
   end
 end
 
- arr = ["Ade", "Ball", "Chi", "Dog", "Ele", "Femi", "Goke"]
-#  arr = [1, 3, 5, 7, 9]
- search = binary_search(arr, "Ball")
+arr1 = ["Ade", "Ball", "Chi", "Dog", "Ele", "Femi", "Goke"]
+arr2 = [1, 3, 5, 7, 9]
+search = binary_search(arr, "Ball")
 puts  search
 
 
