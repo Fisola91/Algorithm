@@ -27,14 +27,14 @@ def binary_search(list, item) # Item is the number we want to guess
   return "none"
 end
 
-# SIMPLE SEARCH algo implementation
-# def binary_search(lists, item)
-#   lists.each_with_index do |list, idx|
-#     if list == item
-#       return idx
-#     end
-#   end
-# end
+# SIMPLE SEARCH algorithm implementation
+def binary_search(lists, item)
+  lists.each_with_index do |list, idx|
+    if list == item
+      return idx
+    end
+  end
+end
 
  arr = ["Ade", "Ball", "Chi", "Dog", "Ele", "Femi", "Goke"]
 #  arr = [1, 3, 5, 7, 9]
