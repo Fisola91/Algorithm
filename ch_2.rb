@@ -14,8 +14,9 @@
 # As a result, you can't read the last item in a linked list.
 # You never have to move your items.
 # If there is space in memory, you have space for your linked list.
+# They are so much better at insert
 # They are great for reading items one at a time.
-# Therefore, they are not good for reading items.
+# But not good for reading item systematically
 
 ## ARRAY
 # They are great for reading items.

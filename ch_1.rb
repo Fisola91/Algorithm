@@ -24,22 +24,28 @@ def binary_search(list, item) # Item is the number we want to guess
       low = mid + 1
     end
   end
+
   return "none"
 end
 
 # SIMPLE SEARCH algorithm implementation
-def binary_search(lists, item)
-  lists.each_with_index do |list, idx|
-    if list == item
-      return idx
-    end
-  end
-end
+# def binary_search(lists, item)
+#   lists.each_with_index do |list, idx|
+#     if list == item
+#       return idx
+#     end
+#   end
+# end
 
-arr1 = ["Ade", "Ball", "Chi", "Dog", "Ele", "Femi", "Goke"]
-arr2 = [1, 3, 5, 7, 9]
-search = binary_search(arr, "Ball")
-puts  search
+# arr1 = ["Ade", "Ball", "Chi", "Dog", "Ele", "Femi", "Goke"]
+arr = [1, 3, 5, 7, 9]
+search = binary_search(arr, 19)
+puts search
+if search == "none"
+  puts true.class
+else
+  puts true.class
+end
 
 
 ## BIG O NOTATION
