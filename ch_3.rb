@@ -17,31 +17,50 @@
 
 
 # LOOP
-def countdown(i)
-  puts i
-  while i > 0
-    i -= 1
-    puts i
-  end
-end
+# def countdown(i)
+#   puts i
+#   while i > 0
+#     puts i -= 1
+#   end
+# end
 
 
 # RECURSION
-def countdown(i)
-  if i == 0 # base case => important for stopping recuursion
-    i
-  else
-    puts i
-    countdown(i-1) # Recursive case
-  end
-end
-puts countdown(3)
+# def countdown(i)
+#   if i == 0 # base case => important for stopping recuursion
+#     i
+#   else
+#     puts i
+#     countdown(i-1) # Recursive case
+#   end
+# end
+# puts countdown(3)
 
 ## CALL STACK => used to save variables for multiple functions
 
 
 
+# Recursion examples
+def factorial(number)
+  if number == 1
+    return number
+  else
+    return number * factorial(number-1)
+  end
+end
 
+puts factorial(5)
+
+
+def sum_recursive(min, max)
+  if min == max
+    return max
+  else
+    return min + sum_recursive(min+1, max)
+  end
+end
+
+puts sum_recursive(0, 4)
 
 
 
