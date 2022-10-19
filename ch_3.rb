@@ -11,6 +11,12 @@
 # When you write a recursive function, you have to tell it when to STOP.
 # That is why every recursive functionhas two parts:
 # (1) The base case => When function doesn't call itself
+
+
+# (2) The recursive case => When function calls itself
+
+
+# LOOP
 def countdown(i)
   puts i
   while i > 0
@@ -20,13 +26,13 @@ def countdown(i)
 end
 
 
-# (2) The recursive case => When function calls itself
+# RECURSION
 def countdown(i)
-  if i == 0
+  if i == 0 # base case => important for stopping recuursion
     i
   else
     puts i
-    countdown(i-1) #This result in an infinite loop
+    countdown(i-1) # Recursive case
   end
 end
 puts countdown(3)
