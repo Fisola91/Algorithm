@@ -22,6 +22,12 @@ class BankAccount
 
   def transaction_history({password: "yoko"})
     if @password == password
+      "congrats"
+    elsif @password != password
+      "wrong password"
+    else
+      "no password given"
+    end
   end
 
 
