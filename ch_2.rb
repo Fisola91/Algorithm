@@ -2,8 +2,6 @@
 
 # A lot of Algorithms work if your data is sorted.
 
-
-
 # arrays and lists are  used to store multiple items.
 # There is no one right way to store items for every use case.
 
@@ -27,30 +25,7 @@
 # Lists are less used becasue they allow sequential access - rea½ding element one by one.
 # A lot of use cases require random access, so arrays are used a lot.
 
-## RUBY
-# class Int
-#   attr_accessor :value
 
-#   def initialize(value)
-#     self.value = value
-#   end
-
-#   def +(x)
-#     value + x
-#   end
-
-#   def -(x)
-#     value - x
-#   end
-# end
-
-# num = Int.new(12)
-
-# addition = num.+(4) # output => 16 --- calling example
-# addition_2 = num + 4 # output => 16 --- Sugar notation
-
-# subtraction = num.-(4) # output => 8 --- calling example
-# subtraction_2 = num - 4 # output => 8 --- Sugare notation
 
 
 ## Second algorithm => SELECTION SORT ALGORITHM

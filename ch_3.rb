@@ -17,24 +17,24 @@
 
 
 # LOOP
-# def countdown(i)
-#   puts i
-#   while i > 0
-#     puts i -= 1
-#   end
-# end
+def countdown(i)
+  puts i
+  while i > 0
+    puts i -= 1
+  end
+end
 
 
 # RECURSION
-# def countdown(i)
-#   if i == 0 # base case => important for stopping recuursion
-#     i
-#   else
-#     puts i
-#     countdown(i-1) # Recursive case
-#   end
-# end
-# puts countdown(3)
+def countdown(i)
+  if i == 0 # base case => important for stopping recursion
+    i
+  else
+    puts i
+    countdown(i-1) # Recursive case
+  end
+end
+puts countdown(3)
 
 ## CALL STACK => used to save variables for multiple functions
 
@@ -94,23 +94,37 @@ puts sum_recursive(0, 4)
 
 
 ## RUBY
-# class Int
-#   attr_accessor :value
+class Int
+  attr_accessor :value, :income
 
-#   def initialize(value)
-#     self.value = value
-#   end
+  def initialize(value)
+    @value = value
+  end
 
-#   def +(x)
-#     value + x
-#   end
+  def +(x)
+    value + x
+  end
 
-#   def -(x)
-#     value - x
-#   end
-# end
+  def -(x)
+    value - x
+  end
 
-# num = Int.new(12)
+  def salary
+    income + value
+  end
+end
+
+num = Int.new(12)
+num.income = 500
+num.salary # Output => 512
+
+
+
+
+
+
+# num.income.class  # NilClass
+
 
 # addition = num.+(4) # output => 16 --- calling example
 # addition_2 = num + 4 # output => 16 --- Sugar notation
